@@ -1,0 +1,48 @@
+/* COLOR */
+
+:root{
+    --green: #0bd6a1;
+    --yellow: #ffd166;
+    --red: #f0466f;
+    --lightblue: #1389b2;
+    --darkblue: #083b4c;
+    --grid-size: 700px;
+    --cell-size: calc(var(--grid-size)/ 10);
+}
+
+body{
+    color: white;
+    background-color: var(--darkblue);
+}
+
+ul{ 
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--grid-size);
+    padding: 0;
+    margin: 50px auto;
+}
+
+ul li{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: var(--lightblue);
+    border: 5px solid var(--darkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+li.fizz{
+    background-color: var(--yellow);
+}
+
+li.buzz{
+    background-color: var(--green);
+}
+
+li.fizzbuzz{
+    background-color: var(--red);
+}
